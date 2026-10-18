@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samer Themri | Cybersecurity Project Hub</title>
+<meta name="description" content="Cybersecurity projects, CTF results and hands-on learning by Samer Themri, INSAT Tunisia.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1016'/%3E%3Cpath d='M9 11l6 5-6 5M17 21h7' stroke='%234fd1c5' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#projects">Skip to projects</a>
+<header class="nav">
+  <a class="brand" href="#top">samer<span>@insat</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="nav">
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#competitions">Competitions</a>
+    <a href="#learning">Practice</a><a href="#certifications">Certifications</a><a href="#community">Community</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="muted">Cybersecurity student, INSAT Tunisia</p>
+      <h1>Samer Themri</h1>
+      <p class="lead" id="headline"></p>
+      <div class="btns" id="heroLinks"></div>
+    </div>
+    <div class="term" aria-hidden="true">
+      <div class="term-bar"><i></i><i></i><i></i><span>jelbene@ctf:~</span></div>
+      <pre id="termOut"></pre>
+    </div>
+  </section>
+
+  <section id="about" class="wrap">
+    <h2>About</h2>
+    <div class="about-grid">
+      <div id="aboutText"></div>
+      <ul class="focus" id="focusList"></ul>
+    </div>
+  </section>
+
+  <section id="projects" class="wrap">
+    <h2>Projects</h2>
+    <p class="sub">Select a project to see the full story: why I built it, what I did and the evidence behind it.</p>
+    <div class="grid" id="projectGrid"></div>
+  </section>
+
+  <section id="competitions" class="wrap">
+    <h2>Cybersecurity competitions</h2>
+    <div class="stack" id="ctfList"></div>
+  </section>
+
+  <section id="learning" class="wrap">
+    <h2>Practical learning</h2>
+    <p class="sub">Hands-on labs and rooms. These are practice, not certifications.</p>
+    <div class="grid" id="learnList"></div>
+  </section>
+
+  <section id="certifications" class="wrap">
+    <h2>Certifications</h2>
+    <div class="grid small" id="certList"></div>
+  </section>
+
+  <section id="community" class="wrap">
+    <h2>Achievements and community</h2>
+    <div class="stack" id="commList"></div>
+  </section>
+
+  <section id="contact" class="wrap">
+    <h2>Contact</h2>
+    <p class="sub">Open to internships, security projects and CTF team-ups.</p>
+    <div class="btns" id="contactLinks"></div>
+  </section>
+</main>
+
+<footer class="wrap foot">Samer Themri &middot; INSAT, Tunisia &middot; <span id="yr"></span></footer>
+
+<dialog id="modal" aria-labelledby="mTitle">
+  <button class="close" id="closeBtn" aria-label="Close project">Close</button>
+  <div id="modalBody"></div>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
