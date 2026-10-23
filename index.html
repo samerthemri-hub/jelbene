@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samer Themri | Software Engineering and Cybersecurity</title>
+<meta name="description" content="Software engineering student at INSAT and cybersecurity enthusiast: projects, CTF write-ups and security learning by Samer Themri.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1016'/%3E%3Cpath d='M9 11l6 5-6 5M17 21h7' stroke='%234fd1c5' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="rain" aria-hidden="true"></canvas>
+<a class="skip" href="#projects">Skip to projects</a>
+<header class="nav">
+  <a class="brand" href="#top">samer<span>@insat</span></a>
+  <span class="off" id="off" title="Scroll offset">0x0000</span>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="nav">
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#competitions">Competitions</a><a href="#writeups">Write-ups</a>
+    <a href="#learning">Practice</a><a href="#certifications">Certifications</a><a href="#community">Community</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="muted">Software engineering student at INSAT &middot; Cybersecurity enthusiast</p>
+      <h1>Samer Themri</h1>
+      <p class="lead" id="headline"><b class="w" data-p="0">Building</b> and <b class="w" data-p="1">breaking</b> things to understand how systems <b class="w" data-p="2">defend</b> themselves.</p>
+      <div class="loop" id="loop" data-phase="0" aria-hidden="true">
+        <div class="sys">
+          <div class="b"><span>client</span><small></small></div>
+          <div class="b f"><span>firewall</span><small></small></div>
+          <div class="b t"><span>auth</span><small></small></div>
+          <div class="b"><span>app</span><small></small></div>
+          <div class="b"><span>data</span><small></small></div>
+          <div class="probe"></div>
+        </div>
+        <p class="loop-cap" id="loopCap"></p>
+      </div>
+      <p class="status" id="status"></p>
+      <div class="btns" id="heroLinks"></div>
+    </div>
+    <div class="term" aria-hidden="true">
+      <div class="term-bar"><i></i><i></i><i></i><span>L3FR1T@ctf:~</span></div>
+      <pre id="termOut"></pre>
+      <div class="hexbar" id="hexBar"></div>
+    </div>
+  </section>
+
+  <section id="about" class="wrap">
+    <h2>About</h2>
+    <div class="about-grid">
+      <div id="aboutText"></div>
+      <div id="focusList"></div>
+    </div>
+  </section>
+
+  <section id="projects" class="wrap">
+    <h2>Projects</h2>
+    <p class="sub">Select a project to see the full story: why I built it, what I did and the evidence behind it.</p>
+    <div class="grid" id="projectGrid"></div>
+  </section>
+
+  <section id="competitions" class="wrap">
+    <h2>Cybersecurity competitions</h2>
+    <div class="stack" id="ctfList"></div>
+  </section>
+
+  <section id="writeups" class="wrap">
+    <h2>CTF write-ups</h2>
+    <p class="sub">Digital forensics and reverse engineering challenges: the artefacts, the analysis and the findings.</p>
+    <div class="chips" id="wuChips"></div>
+    <div class="grid" id="wuList"></div>
+  </section>
+
+  <section id="learning" class="wrap">
+    <h2>Practical learning</h2>
+    <p class="sub">Hands-on labs and rooms. These are practice, not certifications.</p>
+    <div class="grid" id="learnList"></div>
+  </section>
+
+  <section id="certifications" class="wrap">
+    <h2>Certifications</h2>
+    <div class="grid small" id="certList"></div>
+  </section>
+
+  <section id="community" class="wrap">
+    <h2>Achievements and community</h2>
+    <div class="stack" id="commList"></div>
+  </section>
+
+  <section id="contact" class="wrap">
+    <h2>Contact</h2>
+    <p class="sub" id="contactSub"></p>
+    <div id="contactLinks"></div>
+  </section>
+  <section id="draft" class="wrap" hidden>
+    <h2>Write-up editor</h2>
+    <p class="sub">Draft in Markdown with a live preview. Saved only in this browser. Download the .md file and put it in the writeups folder.</p>
+    <div class="editor"><textarea id="edIn" spellcheck="true" aria-label="Write-up in Markdown"></textarea><div class="md" id="edOut"></div></div>
+    <div class="btns"><button class="btn primary" id="edDl">Download .md</button><button class="btn" id="edCopy">Copy Markdown</button><button class="btn" id="edClear">Reset template</button></div>
+  </section>
+</main>
+
+<footer class="wrap foot">Samer Themri &middot; INSAT, Tunisia &middot; <span id="yr"></span></footer>
+
+<dialog id="modal" aria-labelledby="mTitle">
+  <button class="close" id="closeBtn" aria-label="Close project">Close</button>
+  <div id="modalBody"></div>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
