@@ -13,7 +13,7 @@ const SITE = {
   links: {
     github: "https://github.com/samerthemri-hub",
     linkedin: "https://www.linkedin.com/in/samer-themri-977639438",
-    email: "",       // e.g. "you@example.com"
+    email: "samerthemri@gmail.com",       // e.g. "you@example.com"
     ctftime: ""      // optional
   },
   about: [
